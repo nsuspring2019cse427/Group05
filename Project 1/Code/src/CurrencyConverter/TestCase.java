@@ -2,12 +2,15 @@ package CurrencyConverter;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.awt.event.ActionEvent;
+
+
+
 import javax.swing.JOptionPane;
 
 import org.junit.jupiter.api.Test;
 
-class TestCase {
-
+class TestCase extends Start1 {
 	@Test
 	void test() {
 		Convert con = new Convert();
@@ -56,8 +59,62 @@ class TestCase {
 		assertEquals(0, result13);
 		
 		
+		}
+
+
+	@Test
+	public void actionPerformedwithException(ActionEvent arg0) {
+		try {
+			double input = Double.parseDouble(textField_input.getText());
+			if(startBox.getSelectedItem().equals("USD") && endBox.getSelectedItem().equals("USD")) {
+				fail("input is invalid");
+			}
+				  
+			} 
+
+	
+		catch(Exception e) {
 			
 		}
 		
+		try {
+			double input = Double.parseDouble(textField_input.getText());
+			if(startBox.getSelectedItem().equals("Euro") && endBox.getSelectedItem().equals("Euro")) {
+				fail("input is invalid");
+			}
+				  
+			}
 
+		catch(Exception e) {
+			
+		}
+		
+		try {
+			double input = Double.parseDouble(textField_input.getText());
+			if(startBox.getSelectedItem().equals("Rupee") && endBox.getSelectedItem().equals("Rupee")) {
+				fail("input is invalid");
+			}
+				  
+			} 
+
+	
+		catch(Exception e) {
+			
+		}
+		
+		try {
+			double input = Double.parseDouble(textField_input.getText());
+			if(startBox.getSelectedItem().equals("Taka") && endBox.getSelectedItem().equals("Taka")) {
+				fail("input is invalid");
+			}
+				  
+			} 
+
+	
+		catch(Exception e) {
+			
+		}
+	}
 }
+		
+
