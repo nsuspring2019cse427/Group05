@@ -60,7 +60,7 @@ public class Convert  {
 	}
 	
 	public void InvalidInput() {
-		// JOptionPane.showMessageDialog(null, "Input is Invalid");
+		 JOptionPane.showMessageDialog(null, "Input is Invalid");
 		
 		
 	}
