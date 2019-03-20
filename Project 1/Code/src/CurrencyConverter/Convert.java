@@ -59,6 +59,7 @@ public class Convert  {
 		return input*0.84;
 	}
 	
+	// for invalid input
 	public void InvalidInput() {
 		 JOptionPane.showMessageDialog(null, "Input is Invalid");
 		
