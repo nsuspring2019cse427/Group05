@@ -61,7 +61,7 @@ class TestCase extends Start1 {
 		
 		}
 
-
+// test for same currency selection
 	@Test
 	public void actionPerformedwithException(ActionEvent arg0) {
 		try {
@@ -102,9 +102,102 @@ class TestCase extends Start1 {
 			
 		}
 		
+		// test case for partial selection
+		
 		try {
 			double input = Double.parseDouble(textField_input.getText());
-			if(startBox.getSelectedItem().equals("Taka") && endBox.getSelectedItem().equals("Taka")) {
+			if(startBox.getSelectedItem().equals("Taka") && endBox.getSelectedItem().equals("Select")) {
+				fail("input is invalid");
+			}
+				  
+			} 
+
+	
+		catch(Exception e) {
+			
+		}
+		
+		
+		try {
+			double input = Double.parseDouble(textField_input.getText());
+			if(startBox.getSelectedItem().equals("USD") && endBox.getSelectedItem().equals("Select")) {
+				fail("input is invalid");
+			}
+				  
+			} 
+
+	
+		catch(Exception e) {
+			
+		}
+		
+		try {
+			double input = Double.parseDouble(textField_input.getText());
+			if(startBox.getSelectedItem().equals("Euro") && endBox.getSelectedItem().equals("Select")) {
+				fail("input is invalid");
+			}
+				  
+			}
+
+		catch(Exception e) {
+			
+		}
+		
+		try {
+			double input = Double.parseDouble(textField_input.getText());
+			if(startBox.getSelectedItem().equals("Rupee") && endBox.getSelectedItem().equals("Select")) {
+				fail("input is invalid");
+			}
+				  
+			} 
+
+	
+		catch(Exception e) {
+			
+		}
+		
+		try {
+			double input = Double.parseDouble(textField_input.getText());
+			if(startBox.getSelectedItem().equals("Select") && endBox.getSelectedItem().equals("Taka")) {
+				fail("input is invalid");
+			}
+				  
+			} 
+
+	
+		catch(Exception e) {
+			
+		}
+		
+		try {
+			double input = Double.parseDouble(textField_input.getText());
+			if(startBox.getSelectedItem().equals("Select") && endBox.getSelectedItem().equals("USD")) {
+				fail("input is invalid");
+			}
+				  
+			} 
+
+	
+		catch(Exception e) {
+			
+		}
+		
+		try {
+			double input = Double.parseDouble(textField_input.getText());
+			if(startBox.getSelectedItem().equals("Select") && endBox.getSelectedItem().equals("Euro")) {
+				fail("input is invalid");
+			}
+				  
+			} 
+
+	
+		catch(Exception e) {
+			
+		}
+		
+		try {
+			double input = Double.parseDouble(textField_input.getText());
+			if(startBox.getSelectedItem().equals("Select") && endBox.getSelectedItem().equals("Rupee")) {
 				fail("input is invalid");
 			}
 				  
@@ -117,4 +210,5 @@ class TestCase extends Start1 {
 	}
 }
 		
+
 

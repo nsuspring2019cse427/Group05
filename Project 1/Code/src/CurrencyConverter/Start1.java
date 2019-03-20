@@ -19,20 +19,20 @@ public class Start1 {
 	
 	Convert con = new Convert();
 
-	private JFrame frame;
+	 JFrame frame;
 	 JTextField textField_input;
-	private JLabel lblAmount;
-	private JLabel lblNewLabel;
-	private JComboBox startBox;
-	private JLabel lblTo;
-	private JComboBox endBox;
-	private JButton btnConvert;
-	private JButton btnReset;
-	private JButton btnExit;
-	private JLabel lblResult;
-	double result = 0.0;
-	double input ;
-	private JTextField textField_ans;
+	 JLabel lblAmount;
+	 JLabel lblNewLabel;
+	 JComboBox startBox;
+	 JLabel lblTo;
+	 JComboBox endBox;
+	 JButton btnConvert;
+	 JButton btnReset;
+	 JButton btnExit;
+	 JLabel lblResult;
+	 double result = 0.0;
+	 double input ;
+	 JTextField textField_ans;
 
 	/**
 	 * Launch the application.
@@ -148,6 +148,39 @@ public class Start1 {
 						con.InvalidInput();
 					}
 					
+					// for partial input
+					
+					if(startBox.getSelectedItem().equals("Taka") && endBox.getSelectedItem().equals("Select")) {
+						con.InvalidInput();
+					}
+					
+					if(startBox.getSelectedItem().equals("USD") && endBox.getSelectedItem().equals("Select")) {
+						con.InvalidInput();
+					}
+					
+					if(startBox.getSelectedItem().equals("Euro") && endBox.getSelectedItem().equals("Select")) {
+						con.InvalidInput();
+					}
+					
+					if(startBox.getSelectedItem().equals("Rupee") && endBox.getSelectedItem().equals("Select")) {
+						con.InvalidInput();
+					}
+					
+					if(startBox.getSelectedItem().equals("Select") && endBox.getSelectedItem().equals("Taka")) {
+						con.InvalidInput();
+					}
+					
+					if(startBox.getSelectedItem().equals("Select") && endBox.getSelectedItem().equals("USD")) {
+						con.InvalidInput();
+					}
+					
+					if(startBox.getSelectedItem().equals("Select") && endBox.getSelectedItem().equals("Euro")) {
+						con.InvalidInput();
+					}
+					
+					if(startBox.getSelectedItem().equals("Select") && endBox.getSelectedItem().equals("Rupee")) {
+						con.InvalidInput();
+					}
 					
 					if (input < 0) {
 						 
