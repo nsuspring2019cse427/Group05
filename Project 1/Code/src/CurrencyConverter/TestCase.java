@@ -207,6 +207,21 @@ class TestCase extends Start1 {
 		catch(Exception e) {
 			
 		}
+		
+		//for no currency selection
+		
+		try {
+			double input = Double.parseDouble(textField_input.getText());
+			if(startBox.getSelectedItem().equals("Select") && endBox.getSelectedItem().equals("Select")) {
+				fail("input is invalid");
+			}
+				  
+			} 
+
+	
+		catch(Exception e) {
+			
+		}
 	}
 }
 		
