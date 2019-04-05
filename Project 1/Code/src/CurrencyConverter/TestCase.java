@@ -255,6 +255,129 @@ class TestCase extends Start1 {
 		
 
 		}
+	
+	@Test
+	void test_For_Signed_2bit_NegativeInteger() {
+		Convert con = new Convert();
+		
+		//Valid Input
+		/**
+		 * test for  input == -3
+		 
+		 */
+		
+		double result1 = con.USDtoTAKA(-3);
+		assertEquals(0, result1);
+		
+		double result2 = con.EUROtoTAKA(-3);
+		assertEquals(0, result2);
+		
+		double result3 = con.RUPEEtoTAKA(-3);
+		assertEquals(0, result3);
+		
+		double result4 = con.TAKAtoUSD(-3);
+		assertEquals(0, result4);
+		
+		double result5 = con.TAKAtoEURO(-3);
+		assertEquals(0, result5);
+		
+		double result6 = con.TAKAtoRUPEE(-3);
+		assertEquals(0, result6);
+		
+
+		}
+	
+	@Test
+	void test_For_Signed_4bit_NegativeInteger() {
+		Convert con = new Convert();
+		
+		//Valid Input
+		/**
+		 * test for  input == -7
+		 
+		 */
+		
+		double result1 = con.USDtoTAKA(-7);
+		assertEquals(0, result1);
+		
+		double result2 = con.EUROtoTAKA(-7);
+		assertEquals(0, result2);
+		
+		double result3 = con.RUPEEtoTAKA(-7);
+		assertEquals(0, result3);
+		
+		double result4 = con.TAKAtoUSD(-7);
+		assertEquals(0, result4);
+		
+		double result5 = con.TAKAtoEURO(-7);
+		assertEquals(0, result5);
+		
+		double result6 = con.TAKAtoRUPEE(-7);
+		assertEquals(0, result6);
+		
+
+		}
+	
+	@Test
+	void test_For_Signed_8bit_NegativeInteger() {
+		Convert con = new Convert();
+		
+		//Valid Input
+		/**
+		 * test for  input == -98
+		 
+		 */
+		
+		double result1 = con.USDtoTAKA(-98);
+		assertEquals(0, result1);
+		
+		double result2 = con.EUROtoTAKA(-98);
+		assertEquals(0, result2);
+		
+		double result3 = con.RUPEEtoTAKA(-98);
+		assertEquals(0, result3);
+		
+		double result4 = con.TAKAtoUSD(-98);
+		assertEquals(0, result4);
+		
+		double result5 = con.TAKAtoEURO(-98);
+		assertEquals(0, result5);
+		
+		double result6 = con.TAKAtoRUPEE(-98);
+		assertEquals(0, result6);
+		
+		}
+	
+	@Test
+	void test_For_Signed_16bit_NegativeInteger() {
+		Convert con = new Convert();
+		
+		//Valid Input
+		/**
+		 * test for  input == -2656
+		 
+		 */
+		
+		double result1 = con.USDtoTAKA(-2656);
+		assertEquals(0, result1);
+		
+		double result2 = con.EUROtoTAKA(-2656);
+		assertEquals(0, result2);
+		
+		double result3 = con.RUPEEtoTAKA(-2656);
+		assertEquals(0, result3);
+		
+		double result4 = con.TAKAtoUSD(-2656);
+		assertEquals(0, result4);
+		
+		double result5 = con.TAKAtoEURO(-2656);
+		assertEquals(0, result5);
+		
+		double result6 = con.TAKAtoRUPEE(-2656);
+		assertEquals(0, result6);
+		
+
+		}
 
 // test for same currency selection
 	@Test
