@@ -224,6 +224,37 @@ class TestCase extends Start1 {
 		
 		
 	}
+	
+	@Test
+	void test_For_Signed_1bit_NegativeInteger() {
+		Convert con = new Convert();
+		
+		//Valid Input
+		/**
+		 * test for  input == -1
+		 
+		 */
+		
+		double result1 = con.USDtoTAKA(-1);
+		assertEquals(0, result1);
+		
+		double result2 = con.EUROtoTAKA(-1);
+		assertEquals(0, result2);
+		
+		double result3 = con.RUPEEtoTAKA(-1);
+		assertEquals(0, result3);
+		
+		double result4 = con.TAKAtoUSD(-1);
+		assertEquals(0, result4);
+		
+		double result5 = con.TAKAtoEURO(-1);
+		assertEquals(0, result5);
+		
+		double result6 = con.TAKAtoRUPEE(-1);
+		assertEquals(0, result6);
+		
+
+		}
 
 // test for same currency selection
 	@Test
