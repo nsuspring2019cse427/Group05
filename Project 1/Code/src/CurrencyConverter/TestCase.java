@@ -344,7 +344,7 @@ class TestCase extends Start1 {
 						Convert con = new Convert();
 						
 						/**
-						 * test for positive input == +2000
+						 * test for positive input == 40
 						 */
 						
 						double result1 = con.USDtoTAKA(40);
@@ -357,7 +357,7 @@ class TestCase extends Start1 {
 						Convert con = new Convert();
 						
 						/**
-						 * test for positive input == +2000
+						 * test for positive input == 40
 						 */
 						
 						double result2 = con.EUROtoTAKA(40);
@@ -371,7 +371,7 @@ class TestCase extends Start1 {
 						Convert con = new Convert();
 						
 						/**
-						 * test for positive input == +200
+						 * test for positive input == 40
 						 */
 						
 						double result3 = con.RUPEEtoTAKA(40);
