@@ -526,159 +526,418 @@ class TestCase extends Start1 {
 		
 	}
 	
-	@Test
-	void test_For_Signed_1bit_NegativeInteger() {
-		Convert con = new Convert();
-		
-		//Valid Input
-		/**
-		 * test for  input == -1
-		 
-		 */
-		
-		double result1 = con.USDtoTAKA(-1);
-		assertEquals(0, result1);
-		
-		double result2 = con.EUROtoTAKA(-1);
-		assertEquals(0, result2);
-		
-		double result3 = con.RUPEEtoTAKA(-1);
-		assertEquals(0, result3);
-		
-		double result4 = con.TAKAtoUSD(-1);
-		assertEquals(0, result4);
-		
-		double result5 = con.TAKAtoEURO(-1);
-		assertEquals(0, result5);
-		
-		double result6 = con.TAKAtoRUPEE(-1);
-		assertEquals(0, result6);
-		
-
-		}
+	//Test for Input Signed 1Bit Negative integer
 	
-	@Test
-	void test_For_Signed_2bit_NegativeInteger() {
-		Convert con = new Convert();
-		
-		//Valid Input
-		/**
-		 * test for  input == -3
-		 
-		 */
-		
-		double result1 = con.USDtoTAKA(-3);
-		assertEquals(0, result1);
-		
-		double result2 = con.EUROtoTAKA(-3);
-		assertEquals(0, result2);
-		
-		double result3 = con.RUPEEtoTAKA(-3);
-		assertEquals(0, result3);
-		
-		double result4 = con.TAKAtoUSD(-3);
-		assertEquals(0, result4);
-		
-		double result5 = con.TAKAtoEURO(-3);
-		assertEquals(0, result5);
-		
-		double result6 = con.TAKAtoRUPEE(-3);
-		assertEquals(0, result6);
-		
+			@Test
+			void test_For_Signed_1bit_Negative_Integer_USDtoTaka() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -1
+				 */
+				
+				double result1 = con.USDtoTAKA(-1);
+				assertEquals(0, result1);
 
-		}
-	
-	@Test
-	void test_For_Signed_4bit_NegativeInteger() {
-		Convert con = new Convert();
-		
-		//Valid Input
-		/**
-		 * test for  input == -7
-		 
-		 */
-		
-		double result1 = con.USDtoTAKA(-7);
-		assertEquals(0, result1);
-		
-		double result2 = con.EUROtoTAKA(-7);
-		assertEquals(0, result2);
-		
-		double result3 = con.RUPEEtoTAKA(-7);
-		assertEquals(0, result3);
-		
-		double result4 = con.TAKAtoUSD(-7);
-		assertEquals(0, result4);
-		
-		double result5 = con.TAKAtoEURO(-7);
-		assertEquals(0, result5);
-		
-		double result6 = con.TAKAtoRUPEE(-7);
-		assertEquals(0, result6);
-		
+				}
+			
+			
+			@Test
+			void test_For_Signed_1bit_Negative_Integer_EurotoTaka() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -1
+				 */
+				
+				double result2 = con.EUROtoTAKA(-1);
+				assertEquals(0, result2);
 
-		}
-	
-	@Test
-	void test_For_Signed_8bit_NegativeInteger() {
-		Convert con = new Convert();
-		
-		//Valid Input
-		/**
-		 * test for  input == -98
-		 
-		 */
-		
-		double result1 = con.USDtoTAKA(-98);
-		assertEquals(0, result1);
-		
-		double result2 = con.EUROtoTAKA(-98);
-		assertEquals(0, result2);
-		
-		double result3 = con.RUPEEtoTAKA(-98);
-		assertEquals(0, result3);
-		
-		double result4 = con.TAKAtoUSD(-98);
-		assertEquals(0, result4);
-		
-		double result5 = con.TAKAtoEURO(-98);
-		assertEquals(0, result5);
-		
-		double result6 = con.TAKAtoRUPEE(-98);
-		assertEquals(0, result6);
-		
-		}
-	
-	@Test
-	void test_For_Signed_16bit_NegativeInteger() {
-		Convert con = new Convert();
-		
-		//Valid Input
-		/**
-		 * test for  input == -2656
-		 
-		 */
-		
-		double result1 = con.USDtoTAKA(-2656);
-		assertEquals(0, result1);
-		
-		double result2 = con.EUROtoTAKA(-2656);
-		assertEquals(0, result2);
-		
-		double result3 = con.RUPEEtoTAKA(-2656);
-		assertEquals(0, result3);
-		
-		double result4 = con.TAKAtoUSD(-2656);
-		assertEquals(0, result4);
-		
-		double result5 = con.TAKAtoEURO(-2656);
-		assertEquals(0, result5);
-		
-		double result6 = con.TAKAtoRUPEE(-2656);
-		assertEquals(0, result6);
-		
+				}
+			
+			
+			@Test
+			void test_For_Signed_1bit_Negative_Integer_RupeetoTaka() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -1
+				 */
+				
+				double result3 = con.RUPEEtoTAKA(-1);
+				assertEquals(0, result3);
 
-		}
+				}
+			
+			@Test
+			void test_For_Signed_1bit_Negative_Integer_TakatoUSD() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -1
+				 */
+				double result4 = con.TAKAtoUSD(-1);
+				assertEquals(0, result4);
+
+				}
+			
+			@Test
+			void test_For_Signed_1bit_Negative_Integer_TakatoEuro() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -1
+				 */
+				
+				double result5 = con.TAKAtoEURO(-1);
+				assertEquals(0, result5);
+
+				}
+			
+			@Test
+			void test_For_Signed_1bit_Negative_Integer_TakatoRupee() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -1
+				 */
+				
+				double result6 = con.TAKAtoRUPEE(-1);
+				assertEquals(0, result6);
+
+				}
+		
+			//Test for Input Signed 2Bit Negative integer
+			
+			@Test
+			void test_For_Signed_2bit_Negative_Integer_USDtoTaka() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -3
+				 */
+				
+				double result1 = con.USDtoTAKA(-3);
+				assertEquals(0, result1);
+
+				}
+			
+			
+			@Test
+			void test_For_Signed_2bit_Negative_Integer_EurotoTaka() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -3
+				 */
+				
+				double result2 = con.EUROtoTAKA(-3);
+				assertEquals(0, result2);
+
+				}
+			
+			
+			@Test
+			void test_For_Signed_2bit_Negative_Integer_RupeetoTaka() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -3
+				 */
+				
+				double result3 = con.RUPEEtoTAKA(-3);
+				assertEquals(0, result3);
+
+				}
+			
+			@Test
+			void test_For_Signed_2bit_Negative_Integer_TakatoUSD() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -3
+				 */
+				double result4 = con.TAKAtoUSD(-3);
+				assertEquals(0, result4);
+
+				}
+			
+			@Test
+			void test_For_Signed_2bit_Negative_Integer_TakatoEuro() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -3
+				 */
+				
+				double result5 = con.TAKAtoEURO(-3);
+				assertEquals(0, result5);
+
+				}
+			
+			@Test
+			void test_For_Signed_2bit_Negative_Integer_TakatoRupee() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -3
+				 */
+				
+				double result6 = con.TAKAtoRUPEE(-3);
+				assertEquals(0, result6);
+
+				}
+		
+	
+			//Test for Input Signed 4Bit Negative integer
+			
+			@Test
+			void test_For_Signed_4bit_Negative_Integer_USDtoTaka() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -7
+				 */
+				
+				double result1 = con.USDtoTAKA(-7);
+				assertEquals(0, result1);
+
+				}
+			
+			
+			@Test
+			void test_For_Signed_4bit_Negative_Integer_EurotoTaka() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -7
+				 */
+				
+				double result2 = con.EUROtoTAKA(-4);
+				assertEquals(0, result2);
+
+				}
+			
+			
+			@Test
+			void test_For_Signed_4bit_Negative_Integer_RupeetoTaka() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -7
+				 */
+				
+				double result3 = con.RUPEEtoTAKA(-7);
+				assertEquals(0, result3);
+
+				}
+			
+			@Test
+			void test_For_Signed_4bit_Negative_Integer_TakatoUSD() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -7
+				 */
+				double result4 = con.TAKAtoUSD(-7);
+				assertEquals(0, result4);
+
+				}
+			
+			@Test
+			void test_For_Signed_4bit_Negative_Integer_TakatoEuro() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -7
+				 */
+				
+				double result5 = con.TAKAtoEURO(-7);
+				assertEquals(0, result5);
+
+				}
+			
+			@Test
+			void test_For_Signed_4bit_Negative_Integer_TakatoRupee() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -7
+				 */
+				
+				double result6 = con.TAKAtoRUPEE(-7);
+				assertEquals(0, result6);
+
+				}
+				
+	
+		//Test for Input Signed 8Bit Negative integer
+			
+			@Test
+			void test_For_Signed_8bit_Negative_Integer_USDtoTaka() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -98
+				 */
+				
+				double result1 = con.USDtoTAKA(-98);
+				assertEquals(0, result1);
+
+				}
+			
+			
+			@Test
+			void test_For_Signed_8bit_Negative_Integer_EurotoTaka() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -98
+				 */
+				
+				double result2 = con.EUROtoTAKA(-98);
+				assertEquals(0, result2);
+
+				}
+			
+			
+			@Test
+			void test_For_Signed_8bit_Negative_Integer_RupeetoTaka() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -98
+				 */
+				
+				double result3 = con.RUPEEtoTAKA(-98);
+				assertEquals(0, result3);
+
+				}
+			
+			@Test
+			void test_For_Signed_8bit_Negative_Integer_TakatoUSD() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -98
+				 */
+				double result4 = con.TAKAtoUSD(-98);
+				assertEquals(0, result4);
+
+				}
+			
+			@Test
+			void test_For_Signed_8bit_Negative_Integer_TakatoEuro() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -98
+				 */
+				
+				double result5 = con.TAKAtoEURO(-98);
+				assertEquals(0, result5);
+
+				}
+			
+			@Test
+			void test_For_Signed_8bit_Negative_Integer_TakatoRupee() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -98
+				 */
+				
+				double result6 = con.TAKAtoRUPEE(-98);
+				assertEquals(0, result6);
+
+				}
+				
+	
+	
+	//Test for Input Signed 16Bit Negative integer
+			
+			@Test
+			void test_For_Signed_16bit_Negative_Integer_USDtoTaka() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -2656
+				 */
+				
+				double result1 = con.USDtoTAKA(-2656);
+				assertEquals(0, result1);
+
+				}
+			
+			
+			@Test
+			void test_For_Signed_16bit_Negative_Integer_EurotoTaka() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -2656
+				 */
+				
+				double result2 = con.EUROtoTAKA(-2656);
+				assertEquals(0, result2);
+
+				}
+			
+			
+			@Test
+			void test_For_Signed_16bit_Negative_Integer_RupeetoTaka() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -2656
+				 */
+				
+				double result3 = con.RUPEEtoTAKA(-2656);
+				assertEquals(0, result3);
+
+				}
+			
+			@Test
+			void test_For_Signed_16bit_Negative_Integer_TakatoUSD() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -2656
+				 */
+				double result4 = con.TAKAtoUSD(-2656);
+				assertEquals(0, result4);
+
+				}
+			
+			@Test
+			void test_For_Signed_16bit_Negative_Integer_TakatoEuro() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -2656
+				 */
+				
+				double result5 = con.TAKAtoEURO(-2656);
+				assertEquals(0, result5);
+
+				}
+			
+			@Test
+			void test_For_Signed_16bit_Negative_Integer_TakatoRupee() {
+				Convert con = new Convert();
+				
+				/**
+				 * test for positive input == -2656
+				 */
+				
+				double result6 = con.TAKAtoRUPEE(-2656);
+				assertEquals(0, result6);
+
+				}
+				
+			
+			
+			
 
 // test for same currency selection
 	@Test
