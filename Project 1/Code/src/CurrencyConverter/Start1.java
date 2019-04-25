@@ -182,6 +182,11 @@ public class Start1 {
 						con.InvalidInput();
 					}
 					
+					if(startBox.getSelectedItem().equals("Select") && endBox.getSelectedItem().equals("Select")) {
+						con.InvalidInput();
+					}
+					
+					
 					if (input < 0) {
 						 
 						    con.InvalidInput();
