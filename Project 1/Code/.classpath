@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="lib" path="C:/Users/Hp/AppData/Roaming/Sikulix/SikulixDownloads_201807110819/sikulixsetupAPI-1.1.3-20180711.082046-40-forsetup.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hp/Downloads/Mockito/mockito-all-1.9.5.jar/mockito-all-1.9.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
